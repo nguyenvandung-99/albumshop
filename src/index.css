@@ -1,0 +1,303 @@
+html{
+  font-size:62.5%; /*1 rem is now 10px*/
+  box-sizing:border-box;
+}
+body
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,input,select,button,textarea{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a:hover {} */
+
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 3 60rem;
+}
+
+.sidebar {
+  flex: 1 20rem;
+}
+
+/* products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products li {
+  flex: 0 1 29rem;
+  height: 47rem;
+  padding: 0.5rem;
+}
+
+.product-basic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 1rem;
+  border: 0.1rem #ccc solid;
+}
+
+.product-basic img {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.product-basic p {
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price div, .product-price button {
+  text-align: center;
+  flex: 1; 
+}
+
+.product-price div {
+  font-size: 2rem
+}
+
+.button {
+  padding: 1rem;
+  border: .3rem #bbb solid;
+  background-color: #eee;
+}
+
+.button:hover {
+  border: .3rem #888 solid;
+  background-color: #eee;
+}
+
+
+.button.primary {
+  background-color: #fb4;
+}
+
+/* filter */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #ccc solid;
+}
+
+.filter div {
+  flex: 2 3 3;
+}
+
+/* cart */
+.cart {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
+.cart-head {
+  border-bottom:0.1rem #bbb solid;
+}
+
+.cart-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img {
+  width: 5rem;
+}
+
+.cart-items li {
+  display: flex;
+}
+
+.cart-items li div {
+  padding: .5rem;
+}
+
+.cart-items li div:last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total > div {
+  font-size: 2rem
+}
+
+.total > div, .total > button {
+  flex: 1;
+}
+
+/* Checkout */
+form {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border: .1rem #bbb solid;
+}
+
+/* product details */
+.product-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 90vh;
+}
+
+.product-details img{
+  max-height:80vh;
+  max-width:80vw;
+  margin: 0 auto;
+}
+
+.product-details-description {
+  flex: 1 1;
+  margin: 1rem;
+}
+
+.product-details a {
+  text-decoration: none;
+}
+
+.product-details .preview {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.product-details .preview iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.close-modal{
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 1000;
+}
+
+/* Order details */
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-details li div {
+  padding: 1rem;
+}
+
+.order-details .items {
+  text-align: right;
+  padding: 0;
+}
+
+.success-message {
+  color: green;
+}

@@ -1,0 +1,74 @@
+{
+   "products": [
+      {
+         "_id":"album1",
+         "title":"Hadestown",
+         "image":"/images/hadestown.jpg",
+         "year":2019,
+         "shortdes":"Hadestown: The Myth. The Musical. Winners of 8 Tony Awards, including Best Musical!",
+         "duration":132,
+         "price":17.59,
+         "embed": "https://www.youtube.com/embed/NREQfz2uTck"
+      },
+      {
+         "_id":"album2",
+         "title":"Beetlejuice",
+         "image":"/images/beetlejuice.jpg",
+         "year":2019,
+         "shortdes":"Welcome to a show about Death! Based on the 1988 classic.",
+         "duration":57,
+         "price":16.68,
+         "embed": "https://www.youtube.com/embed/J72Yh0J5dtg"
+      },
+      {
+         "_id":"album3",
+         "title":"Dear Evan Hansen",
+         "image":"/images/deh.jpg",
+         "year":2017,
+         "shortdes":"You Will Be Found. Winners of 6 Tony Awards, including Best Musical!",
+         "duration":57,
+         "price":15.99,
+         "embed": "https://www.youtube.com/embed/WJkwjrFbmIs"
+      },
+      {
+         "_id":"album4",
+         "title":"Hamilton",
+         "image":"/images/hamilton.jpg",
+         "year":2015,
+         "shortdes":"An American Musical. Winners of 11 Tony Awards, including Best Musical!",
+         "duration":142,
+         "price":22.51,
+         "embed": "https://www.youtube.com/embed/DSCKfXpAGHc"
+      },
+      {
+         "_id":"album5",
+         "title":"Waitress",
+         "image":"/images/waitress.jpg",
+         "year":2016,
+         "shortdes":"The Hit Broadway Musical baked from the Heart. Featuring music & lyrics by Sara Bareilles.",
+         "duration":52,
+         "price":17.62,
+         "embed": "https://www.youtube.com/embed/mfTVYyj-vck"
+      },
+      {
+         "_id":"album6",
+         "title":"Wicked",
+         "image":"/images/wicked.jpg",
+         "year":2003,
+         "shortdes":"Discover the untold true story of the witches of Oz in this Tony-winning musical!",
+         "duration":70,
+         "price":17.70,
+         "embed": "https://www.youtube.com/embed/nrpLayS57cY"
+      },
+      {
+         "_id":"album7",
+         "title":"Something Rotten!",
+         "image":"/images/somethingrotten.jpg",
+         "year":2015,
+         "shortdes":"A hilarious mashup of sixteenth-century Shakespeare and twenty-first-century Broadway.",
+         "duration":59,
+         "price":13.98,
+         "embed": "https://www.youtube.com/embed/wSdo4itqot4"
+      }
+   ]
+}
