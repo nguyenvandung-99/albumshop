@@ -59,7 +59,6 @@ class Cart extends Component {
           onRequestClose={this.closeModal}
           >
             <Zoom>
-              <button className="close-modal" onClick={this.closeModal}>x</button>
               <div className="order-details">
                 <h3 className="success-message"> Your order has been placed.</h3>
                 <h2>Order {order._id}</h2>
@@ -92,6 +91,7 @@ class Cart extends Component {
                   </li>
                 </ul>
               </div>
+              <button className="close-modal-order" onClick={this.closeModal}>Finish</button>
             </Zoom>
           </Modal>
           )}

@@ -138,6 +138,10 @@ footer {
   background-color: #fb4;
 }
 
+strong {
+  font-size: 2rem;
+}
+
 /* filter */
 .filter {
   display: flex;
@@ -300,6 +304,13 @@ input {
 
 .success-message {
   color: green;
+}
+
+.close-modal-order{
+  position: absolute;
+  align-items: center;
+  bottom: 2.5rem;
+  z-index: 1000;
 }
 
 /* Orders */
