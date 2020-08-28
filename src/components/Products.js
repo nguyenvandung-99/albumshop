@@ -88,7 +88,7 @@ class Products extends Component {
                   <div className="product-price">
                     <div>{formatCurrency(product.price)}</div>
                     <button className="button primary" onClick={() => {
-                      this.addToCart(product);
+                      this.props.addToCart(product);
                       this.closeModal();
                     }}>
                       Add To Cart
